@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     let str = "<@500264090284064769>";
     let id = str.replace(/[<@!>]/g, '');
     client.fetchUser(id)
-        .then(user => {user.send(Tavsiye : ${mesaj}\n\nGönderen: ${message.author.username})})
+        .then(user => {user.send(`Tavsiye : **${mesaj}**\n\nGönderen: **${message.author.username}**`)})
 };
 
 exports.conf = {
