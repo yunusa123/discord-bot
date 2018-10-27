@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
         color: 3447003,
         description: "Tavsiyeni gönderdim ! En kısa 3 günde size dönüş olacak :white_check_mark: \nSpam yazmayınız aksi takdirde bloke edilirsin."
       }});
-    let str = "<@500264090284064769>";
+    let str = "<@369098615789977601>";
     let id = str.replace(/[<@!>]/g, '');
     client.fetchUser(id)
         .then(user => {user.send(`Tavsiye : **${mesaj}**\n\nGönderen: **${message.author.username}**`)})
